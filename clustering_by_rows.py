@@ -42,7 +42,7 @@ def calculate_age(born):
     today = date.today()
     return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
 
-df_patient['Age'] = df_patient['DateOfBirth'].apply(lambda x: from_dob_to_age(x
+df_patient['Age'] = df_patient['DateOfBirth'].apply(lambda x: calculate_age(x))
 df_patient = df_patient.drop('DateOfBirth', 1)
 print(df_patient.head())
 #Create IcdCode Column for each patient -initialise with empty list

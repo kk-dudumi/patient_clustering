@@ -1,5 +1,5 @@
 # import all packages
-import datetime
+from datetime import datetime
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -114,7 +114,7 @@ plt.scatter(df_useful.iloc[y_kmeans==3, 0],df_useful.iloc[y_kmeans==3, 1], s=100
 # plt.scatter(df_useful.iloc[y_kmeans==6, 0],df_useful.iloc[y_kmeans==6, 1], s=100, c='yellow', label ='Cluster 7')
 plt.scatter(df_useful.iloc[y_kmeans==1, 0], df_useful.iloc[y_kmeans==1, 1], s=100, c='blue', label ='Cluster 2')
 plt.scatter(df_useful.iloc[y_kmeans==2, 0], df_useful.iloc[y_kmeans==2, 1], s=100, c='green', label ='Cluster 3')
-Plot the centroid. This time we're going to use the cluster centres  #attribute that returns here the coordinates of the centroid.
+# Plot the centroid. This time we're going to use the cluster centres  #attribute that returns here the coordinates of the centroid.
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=300, c='yellow', label = 'Centroids')
 plt.title('Clusters of patients')
 plt.xlabel('Measurement_id')
