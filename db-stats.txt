@@ -1,0 +1,48 @@
+5000 patients
+Distinct measurement Ids  '26,903,266'
+All Measurement Ids       '26,903,266'
+Total people with Measurements 5000
+Total SNOMED Ids in measurement 11
+| Distinct SNOMED Ids |
++---------------------+
+| 50373000            | Body height
+| 386725007           | Body temperature
+| 271650006           | Diastolic Blood Pressure
+| 72313002            | Systolic Arterial Pressure
+| 444981005           | Resting heart rate 
+| 726527001           | Weight
+| 103228002           | Hemoglobin saturation with oxygen
+| 163636005           | On examination - muscle mass
+| 165263003           | Walking distance
+| 250825003           | Ambient temperature
+| 6012004             | Hearing aid, device
+
++---------------------+
+| Distinct Value Ids |
++---------------------+
+|               12666 |
++---------------------+
+
+Total people with medical history entries 5000
+Total Medical History Ids/entries         35187
+Distinct Medical History Ids/entries      35187
+
+Distinct IcdCodes 14
+
+'E08'		Diabetes
+'Z91.81'    History of falling
+'G31.84'    Mild cognitive impairment, so stated
+'H90'       Conductive and sensorineural hearing loss
+'I67.9'     Cerebrovascular disease, unspecified
+'R63.4'     Abnormal weight loss
+'F10.9'     Alcohol use
+'F17'       Nicotine dependence
+'Z82.2'     Family history of deafness and hearing loss
+'G47.9'     Sleep disorder, unspecified
+'F32.9'     Major depressive disorder, single episode, unspecified
+'Z01.11'    Encounter for examination of ears and hearing with abnormal findings
+'Z77.122'   Contact with and (suspected) exposure to noise
+'R26.89'    Other abnormalities of gait and mobility
+
+Details: Null for all patients
+
