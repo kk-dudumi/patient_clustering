@@ -22,7 +22,9 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
 import os
 import mysql.connector
-connection = mysql.connector.connect(host = '127.0.0.1',user ='root', passwd = 'root', db='patientdata')
+print("PLEASE ENTER THE DATABASE PASSWORD")
+db_password = int(input())
+connection = mysql.connector.connect(host = '127.0.0.1:3336',user ='developer', passwd = db_password, db='medical')
 print(connection)
 df_patient = pd.read_sql_query('''select * from patientdata.measurement ms
 join patientdata.medicalhistory mh

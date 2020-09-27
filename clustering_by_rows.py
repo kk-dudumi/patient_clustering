@@ -35,12 +35,17 @@ df_patient = pd.read_sql_query('''select PersonId, DateOfBirth, Gender, Educatio
 
 #Convert DateOfBirth to Age
 
+#Convert DateOfBirth to Age
+
 df_patient['DateOfBirth'] = pd.to_datetime(df_patient.DateOfBirth)
+# print(df_patient['DateOfBirth'])
+
 
 def calculate_age(born):
-    born = datetime.strptime(born, "%d.%m.%Y").date()
-    today = date.today()
+    born = datetime.datetime.strptime(str(born), "%Y-%m-%d %H:%M:%S").date()
+    today = datetime.date.today()
     return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
+
 
 df_patient['Age'] = df_patient['DateOfBirth'].apply(lambda x: calculate_age(x))
 df_patient = df_patient.drop('DateOfBirth', 1)
